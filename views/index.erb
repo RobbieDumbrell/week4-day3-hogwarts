@@ -1,0 +1,10 @@
+<h3>STUDENT LIST</h3>
+
+<%for student in @students %>
+<p>Student name: <%= student.format_name %></p>
+<p><a href="/students/<%= student.id %>">More Details</a></p>
+<% end %>
+
+<form class="" action="/students/new" method="get">
+  <input type="submit" name="" value="ENROL NEW STUDENT">
+</form>

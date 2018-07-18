@@ -1,0 +1,16 @@
+<h3>STUDENT ID NUMBER: <%= @student.id %></h3>
+
+<p>First name: <%= @student.first_name.upcase%></p>
+<p>Last name: <%= @student.last_name.upcase%></p>
+<p>Age: <%= @student.age%></p>
+<p>House: <%= @student.house.name.upcase%></p>
+
+<form class="" action="/students/<%= @student.id%>/delete" method="post">
+  <input type="submit" name="" value="DELETE">
+</form>
+
+<form class="" action="/students/<%= @student.id%>/edit" method="get">
+  <input type="submit" name="" value="EDIT">
+</form>
+
+<p><a href="/students">Student List</a></p>
